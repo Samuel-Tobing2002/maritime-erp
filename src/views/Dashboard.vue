@@ -1,11 +1,15 @@
-<template>
-  <div>
-    <h1 class="text-2xl font-bold mb-4">Dashboard</h1>
+<script setup>
+import Stats from "../components/dashboard/Stats.vue";
+import ChartSection from "../components/dashboard/ChartSection.vue";
+import FleetTable from "../components/dashboard/FleetTable.vue";
+</script>
 
-    <div class="grid grid-cols-3 gap-6">
-      <div class="bg-white p-5 rounded-lg shadow">
-        <p class="text-gray-500">KONTNE DASHBOARD</p>
-      </div>
-    </div>
+<template>
+  <div class="space-y-6">
+
+    <Stats />
+    <ChartSection />
+    <FleetTable />
+
   </div>
 </template>
