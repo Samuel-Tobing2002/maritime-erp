@@ -11,17 +11,14 @@
 
       <div class="relative cursor-pointer">
         <Bell class="w-5 h-5 text-black" />
-        <span class="absolute -top-1 -right-1 
-                     bg-red-500 text-white text-[10px] 
-                     w-4 h-4 flex items-center justify-center 
-                     rounded-full font-semibold">
+        <span class="absolute -top-1 -right-1 bg-red-500 text-white text-[10px] w-4 h-4 flex items-center justify-center rounded-full">
           2
         </span>
       </div>
 
+      <!-- PROFILE -->
       <div class="flex items-center gap-2 cursor-pointer">
-        <div class="w-9 h-9 rounded-lg bg-red-600 text-white 
-                    flex items-center justify-center text-sm font-bold">
+        <div class="w-9 h-9 rounded-lg bg-red-600 text-white flex items-center justify-center text-sm font-bold">
           KW
         </div>
 
