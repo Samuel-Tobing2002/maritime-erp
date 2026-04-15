@@ -1,10 +1,14 @@
 <template>
   <div class="h-16 bg-[#F3F4FA] flex items-center justify-between px-6">
-    <h3 class="font-bold text-[35px] text-[#000348] pt-8">
-      Dashboard
-    </h3>
 
+    <!-- TITLE DINAMIS -->
+    <h1 class="text-3xl font-bold text-[#000348]">
+      {{ pageTitle }}
+    </h1>
+
+    <!-- RIGHT -->
     <div class="flex items-center gap-4">
+
       <div class="relative cursor-pointer">
         <Bell class="w-5 h-5 text-black" />
         <span class="absolute -top-1 -right-1 
@@ -20,14 +24,25 @@
                     flex items-center justify-center text-sm font-bold">
           KW
         </div>
+
         <span class="text-sm text-black font-medium">
           kelvinwilliam@gmail.com
-        </span
+        </span>
       </div>
+
     </div>
+
   </div>
 </template>
 
 <script setup>
 import { Bell } from "lucide-vue-next";
+import { useRoute } from "vue-router";
+import { computed } from "vue";
+
+const route = useRoute();
+
+const pageTitle = computed(() => {
+  return route.meta.title || "Dashboard";
+});
 </script>

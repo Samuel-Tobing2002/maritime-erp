@@ -1,5 +1,5 @@
 <template>
-  <div class="grid grid-cols-5 gap-6">
+  <div class="grid grid-cols-4 gap-6">
 
     <div class="card">
       <h1 class="number">20</h1>
@@ -8,22 +8,17 @@
 
     <div class="card">
       <h1 class="number">100</h1>
-      <p class="label">Crew Onboard</p>
+      <p class="label">At Sea</p>
     </div>
 
     <div class="card">
       <h1 class="number">8</h1>
-      <p class="label">Overdue Task</p>
+      <p class="label">At Port</p>
     </div>
 
     <div class="card">
       <h1 class="number">5</h1>
-      <p class="label">Certificates Expiring</p>
-    </div>
-
-    <div class="card">
-      <h1 class="number">2</h1>
-      <p class="label">Inactive Vessel</p>
+      <p class="label">Under Maintenance</p>
     </div>
 
   </div>
