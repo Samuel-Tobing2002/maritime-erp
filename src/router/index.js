@@ -1,54 +1,36 @@
 import { createRouter, createWebHistory } from "vue-router";
-
 import Dashboard from "../views/Dashboard.vue";
-import FleetOverview from "../views/FleetOverview.vue";
-import CrewOverview from "../views/CrewOverview.vue";
-import AddNewVessel from "@/views/addvessel/AddNewVessel.vue";
+import Konten from "../views/Konten.vue";
+import Konten2 from "../views/Konten2.vue";
 import MainLayout from "../layouts/MainLayout.vue";
-import VesselDetail from "@/views/vessels.vue";
-
 
 const routes = [
-  {
-    path: "/",
-    component: MainLayout,
-    children: [
-        {
-            path: "",
-            name: "Dashboard",
-            component: Dashboard,
-            meta: { title: "Dashboard" },
-        },
-        {
-            path: "fleetoverview",
-            name: "FleetOverview",
-            component: FleetOverview,
-            meta: { title: "Fleet Overview" },
-        },
-        {
-            path: "crewoverview",
-            name: "CrewOverview",
-            component: CrewOverview,
-            meta: { title: "Crew Overview" },
-        },
-        {
-            path: "add-vessel",
-            name: "AddVessel",
-            component: AddNewVessel,
-            meta: { title: "Add New Vessel" },
-        },
-        {
-        path: "vessel/:id",
-        name: "VesselDetail",
-        component: VesselDetail,
-        },
-    ],
-  },
+    {
+        path: "/",
+        component: MainLayout,
+        children: [
+            {
+                path: "",
+                name: "Dashboard",
+                component: Dashboard,
+            },
+            {
+                path: "konten",
+                name: "Konten",
+                component: Konten,
+            },
+            {
+                path: "konten2",
+                name: "Konten2",
+                component: Konten2,
+            },
+        ],
+    },
 ];
 
 const router = createRouter({
-  history: createWebHistory(),
-  routes,
+    history: createWebHistory(),
+    routes,
 });
 
 export default router;
