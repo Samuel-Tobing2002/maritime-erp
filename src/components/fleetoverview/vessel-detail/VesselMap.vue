@@ -1,18 +1,15 @@
 <template>
   <div class="wrapper">
 
-    <!-- HEADER -->
     <div class="flex justify-between items-center">
       <h3 class="title">Navigation & Voyage</h3>
       <MoreVertical class="w-5 h-5 text-gray-400 cursor-pointer" />
     </div>
 
-    <!-- MAP -->
     <div class="map">
       MAP HERE
     </div>
 
-    <!-- ROUTE -->
     <div class="route">
 
       <div class="text-left">
@@ -32,7 +29,6 @@
 
     </div>
 
-    <!-- INFO -->
     <div class="info-list">
 
       <div class="info-item">
@@ -75,12 +71,10 @@ import { MoreVertical } from "lucide-vue-next";
   @apply text-sm font-semibold text-gray-700;
 }
 
-/* MAP */
 .map {
   @apply h-60 bg-gray-300 rounded-lg flex items-center justify-center text-sm text-gray-500;
 }
 
-/* ROUTE */
 .route {
   @apply flex items-center justify-between text-xs mt-2;
 }
@@ -93,7 +87,6 @@ import { MoreVertical } from "lucide-vue-next";
   @apply text-gray-500;
 }
 
-/* LINE */
 .line {
   @apply relative flex-1 mx-4 h-[2px] bg-gray-300;
 }
@@ -106,7 +99,6 @@ import { MoreVertical } from "lucide-vue-next";
   @apply absolute top-1/2 -translate-y-1/2 left-[70%] w-3 h-3 bg-blue-600 rounded-full;
 }
 
-/* INFO */
 .info-list {
   @apply mt-3;
 }

@@ -1,12 +1,9 @@
 <template>
   <div class="h-16 bg-[#F3F4FA] flex items-center justify-between px-6">
-
-    <!-- TITLE DINAMIS -->
     <h1 class="text-3xl font-bold text-[#000348]">
       {{ pageTitle }}
     </h1>
 
-    <!-- RIGHT -->
     <div class="flex items-center gap-4">
 
       <div class="relative cursor-pointer">
@@ -16,7 +13,6 @@
         </span>
       </div>
 
-      <!-- PROFILE -->
       <div class="flex items-center gap-2 cursor-pointer">
         <div class="w-9 h-9 rounded-lg bg-red-600 text-white flex items-center justify-center text-sm font-bold">
           KW

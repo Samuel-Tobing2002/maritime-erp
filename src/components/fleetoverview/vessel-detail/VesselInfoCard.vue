@@ -1,7 +1,6 @@
 <template>
   <div class="card">
 
-    <!-- LEFT -->
     <div class="left">
 
       <h3 class="title">General Information</h3>
@@ -15,7 +14,6 @@
 
     </div>
 
-    <!-- RIGHT -->
     <div class="right">
 
       <h3 class="title">Equipment</h3>
@@ -57,47 +55,38 @@ const leftData = [
 
 <style scoped>
 
-/* CARD */
 .card {
   @apply bg-white rounded-xl shadow-sm p-6 grid grid-cols-2 gap-6;
 }
 
-/* LEFT */
 .left {
   @apply pr-6 border-r border-dashed border-gray-300;
 }
 
-/* RIGHT */
 .right {
   @apply pl-6;
 }
 
-/* TITLE */
 .title {
   @apply text-sm font-semibold text-gray-700 mb-3;
 }
 
-/* LEFT BOX */
 .left-box {
   @apply bg-gray-50 rounded-lg p-3 space-y-2;
 }
 
-/* ROW */
 .row {
   @apply flex justify-between text-sm text-gray-700 py-2 border-b border-gray-200 last:border-none;
 }
 
-/* RIGHT DOTTED */
 .row-dotted {
   @apply flex justify-between text-sm text-gray-700 pb-2 border-b border-dashed border-gray-300;
 }
 
-/* HIGHLIGHT */
 .highlight {
   @apply flex justify-between items-center text-sm bg-gray-100 px-3 py-2 rounded-lg;
 }
 
-/* VALUE */
 .value {
   @apply text-gray-600;
 }

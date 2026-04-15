@@ -1,7 +1,6 @@
 <template>
   <div class="bg-white rounded-xl shadow-sm p-5 space-y-4">
 
-    <!-- HEADER -->
     <div class="flex items-center justify-between">
       <h2 class="font-semibold text-gray-800">Vessel List</h2>
 
@@ -13,7 +12,6 @@
     </button>
     </div>
 
-    <!-- FILTER -->
     <div class="flex items-center gap-3">
       <button class="chip active">ALL</button>
       <button class="chip green">Active</button>
@@ -21,7 +19,6 @@
       <button class="chip red">Inactive</button>
     </div>
 
-    <!-- SEARCH -->
     <div>
       <input
         type="text"
@@ -30,7 +27,6 @@
       />
     </div>
 
-    <!-- TABLE -->
     <div class="overflow-x-auto">
       <table class="w-full text-sm">
         <thead class="text-gray-500 text-xs border-b">
@@ -65,7 +61,6 @@
             <td>•••</td>
           </tr>
 
-          <!-- EMPTY SPACE -->
           <tr v-for="i in 6" :key="i">
             <td colspan="8" class="h-10 border-b"></td>
           </tr>
@@ -88,7 +83,6 @@ const goToDetail = (id) => {
 </script>
 
 <style scoped>
-/* FILTER CHIP */
 .chip {
   @apply px-3 py-1 rounded-full text-xs bg-gray-100 text-gray-600;
 }
@@ -109,7 +103,6 @@ const goToDetail = (id) => {
   @apply bg-red-100 text-red-600;
 }
 
-/* STATUS BADGE */
 .status {
   @apply px-2 py-1 rounded-full text-xs font-medium;
 }

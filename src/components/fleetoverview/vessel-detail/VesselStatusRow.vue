@@ -55,20 +55,17 @@ import { Check, Bell, Wrench, Circle, Calendar } from "lucide-vue-next";
 
 <style scoped>
 
-/* WRAPPER */
 .wrapper {
   @apply bg-white rounded-xl shadow-sm flex overflow-hidden;
   height: 72px;
 }
 
-/* ITEM */
 .item {
   @apply flex items-center gap-3 px-6 text-sm text-gray-700;
   flex: 1;
   border-right: 1px solid #e5e7eb;
 }
 
-/* REMOVE BORDER LAST */
 .item:last-child {
   border-right: none;
 }
@@ -78,7 +75,6 @@ import { Check, Bell, Wrench, Circle, Calendar } from "lucide-vue-next";
   @apply w-10 h-10 rounded-full flex items-center justify-center;
 }
 
-/* COLORS */
 .green { @apply bg-green-100 text-green-600; }
 .yellow { @apply bg-yellow-100 text-yellow-600; }
 .red { @apply bg-red-100 text-red-600; }

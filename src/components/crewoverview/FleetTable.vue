@@ -1,35 +1,28 @@
 <template>
   <div class="bg-white rounded-xl shadow-sm p-5 space-y-4">
-
-    <!-- HEADER -->
     <div class="flex items-center justify-between">
       <h2 class="font-semibold text-gray-800">Crew List</h2>
     </div>
 
-    <!-- FILTER + BUTTON -->
     <div class="flex items-center justify-between">
 
-      <!-- LEFT (FILTER) -->
       <div class="flex items-center gap-3 flex-wrap">
         <button class="chip active">ALL</button>
         <button class="chip green">Onboard</button>
         <button class="chip yellow">Stand By</button>
         <button class="chip red">On Leave</button>
 
-        <!-- DROPDOWN -->
         <select class="chip bg-gray-200 text-gray-700 cursor-pointer">
           <option>Vessel</option>
         </select>
       </div>
 
-      <!-- RIGHT (BUTTON) -->
       <button class="bg-blue-600 text-white text-sm px-4 py-2 rounded-lg hover:bg-blue-700">
         Add Crew
       </button>
 
     </div>
 
-    <!-- SEARCH -->
     <div>
       <input
         type="text"
@@ -38,7 +31,6 @@
       />
     </div>
 
-    <!-- TABLE -->
     <div class="overflow-x-auto">
       <table class="w-full text-sm">
         <thead class="text-gray-500 text-xs border-b">
@@ -81,7 +73,6 @@
             <td>•••</td>
           </tr>
 
-          <!-- EMPTY SPACE -->
           <tr v-for="i in 6" :key="i">
             <td colspan="8" class="h-10 border-b"></td>
           </tr>
@@ -94,7 +85,6 @@
 </template>
 
 <style scoped>
-/* FILTER CHIP */
 .chip {
   @apply px-3 py-1 rounded-full text-xs bg-gray-100 text-gray-600;
 }
@@ -115,7 +105,6 @@
   @apply bg-red-100 text-red-600;
 }
 
-/* STATUS BADGE */
 .status {
   @apply px-2 py-1 rounded-full text-xs font-medium;
 }

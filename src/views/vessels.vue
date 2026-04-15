@@ -1,42 +1,25 @@
 <template>
   <div class="p-6 bg-[#F3F4FA] space-y-6">
-
-    <!-- HEADER -->
     <VesselHeader />
-
-    <!-- STATUS -->
     <VesselStatusRow />
-
-    <!-- GRID -->
     <div class="grid grid-cols-3 gap-6">
-
-      <!-- LEFT -->
       <div class="col-span-2 space-y-6">
         <VesselInfoCard />
         <VesselOperational />
       </div>
-
-      <!-- RIGHT -->
       <VesselMap />
-
     </div>
-
     <div class="grid grid-cols-3 gap-6 mt-6">
-
       <div class="col-span-2">
         <RiskCompliance />
       </div>
-
       <div>
         <RecentActivity />
       </div>
-
     </div>
-
     <div class="mt-6">
       <PortCallsHistory />
     </div>
-
   </div>
 </template>
 

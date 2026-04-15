@@ -4,15 +4,12 @@
     isCollapsed ? 'w-20' : 'w-64'
   ]">
 
-    <!-- TOP -->
     <div>
-      <!-- LOGO -->
       <div class="p-5 text-lg font-bold text-center">
         <span v-if="!isCollapsed">*LOGO*</span>
         <Ship v-else class="w-6 h-6 mx-auto" />
       </div>
 
-      <!-- MENU -->
       <ul class="space-y-1 px-2">
 
         <li>
@@ -58,7 +55,6 @@
       </ul>
     </div>
 
-    <!-- BOTTOM -->
     <div class="px-2 pb-10 space-y-1">
 
       <router-link 
@@ -87,7 +83,6 @@
 
     </div>
 
-    <!-- TOGGLE -->
     <button
       @click="isCollapsed = !isCollapsed"
       class="absolute bottom-20 -right-3 
@@ -120,7 +115,6 @@ import {
 const isCollapsed = ref(false);
 const route = useRoute();
 
-/* ACTIVE MENU FUNCTION */
 const isActive = (name) => {
   return route.name === name ? 'active' : '';
 };
@@ -128,13 +122,11 @@ const isActive = (name) => {
 
 <style scoped>
 
-/* MENU BASE */
 .menu {
   @apply flex items-center gap-3 px-4 py-2 rounded-lg text-sm 
          hover:bg-blue-600 transition;
 }
 
-/* ACTIVE MENU */
 .active {
   @apply bg-blue-700;
 }

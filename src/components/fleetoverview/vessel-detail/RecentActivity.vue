@@ -1,10 +1,8 @@
 RecentActivity<template>
   <div class="wrapper">
 
-    <!-- HEADER -->
     <h3 class="title">Recent Activity</h3>
 
-    <!-- LIST -->
     <div class="list">
 
       <div class="item">

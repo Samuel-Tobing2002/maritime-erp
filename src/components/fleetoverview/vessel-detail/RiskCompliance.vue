@@ -1,13 +1,11 @@
 <template>
   <div class="wrapper">
 
-    <!-- HEADER -->
     <div class="flex justify-between items-center">
       <h3 class="title">Risk & Compliance</h3>
       <span class="view">View All</span>
     </div>
 
-    <!-- LIST -->
     <div class="list">
 
       <div class="item">

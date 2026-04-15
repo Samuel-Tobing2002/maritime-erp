@@ -1,34 +1,21 @@
 <template>
   <div class="page-wrapper">
-
     <div class="">
-
-      <!-- CARD -->
       <div class="card">
-
-        <!-- ================= GENERAL ================= -->
         <div class="section-header">
           General Information
         </div>
-
         <div class="section-body space-y-6">
-
-          <!-- UPLOAD -->
           <div class="upload-box">
             <p class="upload-title">Drop your file here</p>
             <p class="upload-sub">
               Supported file formats: PDF, DOC, DOCX (2MB or less)
             </p>
-
             <button class="upload-btn">
               Upload
             </button>
           </div>
-
-          <!-- FORM -->
           <div class="grid grid-cols-2 gap-8">
-
-            <!-- LEFT -->
             <div class="space-y-5">
               <div>
                 <label class="label">Vessel Name</label>
@@ -46,7 +33,6 @@
               </div>
             </div>
 
-            <!-- RIGHT -->
             <div class="space-y-5">
               <div>
                 <label class="label">IMO</label>

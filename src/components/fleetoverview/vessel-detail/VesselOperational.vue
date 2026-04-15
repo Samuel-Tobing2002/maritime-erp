@@ -1,12 +1,10 @@
 <template>
   <div class="wrapper">
 
-    <!-- TITLE -->
     <h3 class="section-title">Operational Status</h3>
 
     <div class="grid grid-cols-2 gap-4">
 
-      <!-- OVERALL HEALTH -->
       <div class="card">
         <div class="card-header">
           <Plus class="icon green" />
@@ -25,7 +23,6 @@
         </div>
       </div>
 
-      <!-- COMPLIANCE -->
       <div class="card">
         <div class="card-header">
           <ClipboardCheck class="icon blue" />
@@ -44,7 +41,6 @@
         </div>
       </div>
 
-      <!-- NEXT DRY DOCK -->
       <div class="card empty">
         <div class="card-header">
           <Calendar class="icon gray" />
@@ -52,7 +48,6 @@
         </div>
       </div>
 
-      <!-- CREW -->
       <div class="card">
         <div class="card-header">
           <Users class="icon navy" />
@@ -90,37 +85,30 @@ import {
 
 <style scoped>
 
-/* WRAPPER */
 .wrapper {
   @apply bg-white rounded-xl shadow-sm p-5 space-y-4;
 }
 
-/* TITLE */
 .section-title {
   @apply text-sm font-semibold text-gray-700;
 }
 
-/* CARD */
 .card {
   @apply bg-gray-50 rounded-lg overflow-hidden border;
 }
 
-/* HEADER */
 .card-header {
   @apply flex items-center gap-2 px-3 py-2 border-b bg-gray-100 text-sm font-medium text-gray-700;
 }
 
-/* BODY */
 .card-body {
   @apply p-3 space-y-2;
 }
 
-/* EMPTY CARD */
 .empty {
   @apply min-h-[80px];
 }
 
-/* ICON */
 .icon {
   @apply w-4 h-4;
 }
@@ -130,7 +118,6 @@ import {
 .gray { @apply text-gray-500; }
 .navy { @apply text-[#000348]; }
 
-/* PROGRESS */
 .progress {
   @apply h-2 bg-gray-200 rounded mt-2;
 }

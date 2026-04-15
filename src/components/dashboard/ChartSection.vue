@@ -1,10 +1,8 @@
 <template>
   <div class="space-y-6">
 
-    <!-- ================= ROW 1 ================= -->
     <div class="grid grid-cols-3 gap-6">
 
-      <!-- Fleet Status -->
       <div class="bg-white p-5 rounded-xl shadow-sm">
         <h3 class="font-semibold text-gray-700 mb-4">Fleet Status</h3>
 
@@ -17,7 +15,6 @@
             />
           </div>
 
-          <!-- Legend kanan -->
           <div class="space-y-2 text-sm">
             <div class="flex items-center gap-2">
               <span class="w-3 h-3 bg-[#2BBBAD]"></span> Underway
@@ -35,7 +32,6 @@
         </div>
       </div>
 
-      <!-- Crew Overview -->
       <div class="col-span-2 bg-white p-5 rounded-xl shadow-sm">
         <h3 class="font-semibold text-gray-700 mb-4">Crew Overview</h3>
 
@@ -46,7 +42,6 @@
 
     </div>
 
-    <!-- ================= ROW 2 ================= -->
     <div class="grid grid-cols-3 gap-6">
 
       <!-- Document Status -->
@@ -76,7 +71,6 @@
         </div>
       </div>
 
-      <!-- Overall Compliance -->
       <div class="bg-white p-5 rounded-xl shadow-sm">
         <h3 class="font-semibold text-gray-700 mb-4">Overall Compliance</h3>
 
@@ -91,7 +85,6 @@
         </div>
       </div>
 
-      <!-- Activity Log -->
       <div class="bg-white p-5 rounded-xl shadow-sm">
         <h3 class="font-semibold text-gray-700 mb-4">Activity log</h3>
 
